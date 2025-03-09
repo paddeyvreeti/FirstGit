@@ -179,5 +179,7 @@ while True:
                  break
 
             else: type_text("Try Again Plz\n")
+        break
     else: 
         type_text("Invalid choice. Try again!")
+        break
