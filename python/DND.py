@@ -213,3 +213,4 @@ while True:
     else: 
         type_text("Invalid choice. Try again!")
         break
+    #yipieeeee finishedddd
