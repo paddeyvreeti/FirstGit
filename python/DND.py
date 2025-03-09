@@ -2,13 +2,13 @@
 import time
 import sys
 
-def type_text(text, speed=0):
+def type_text(text, speed=0.05):
     for char in text: 
         sys.stdout.write(char)
         sys.stdout. flush()
         time.sleep(speed)
     print() 
-    time.sleep(0)
+    time.sleep(0.5)
 
 #Inventory definitions using dictionary
 e = {}
