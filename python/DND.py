@@ -8,7 +8,37 @@ def type_text(text, speed=0):
         sys.stdout. flush()
         time.sleep(speed)
     print() 
-    time.sleep(0.0000003)
+    time.sleep(0)
+
+#Inventory definitions using dictionary
+e = {}
+#Function to add item to inventory
+def add2inven(item, quantity =1 ):
+    if item in e: 
+        e[item] += quantity
+    else:
+        e[item] = quantity 
+    type_text(f"You've picked up: {item} (x{quantity})")
+
+#Function to delete item from inventory
+def delinven(item, quantity = 1):
+    if item in e: 
+        if e[item] > quantity:
+            inventory -= quantity
+        else:
+            del e[item]
+        type_text(f"You used {item} x{quantity}")
+    else: 
+        type_text(f"You dont have any {item}")
+
+def showe(): 
+    if e: 
+        for item, quanity in e.items():
+            print(f"-{item} (x{quanity})")
+    else: 
+        type_text("You have no items.")
+
+
         
 
 while True:
