@@ -44,13 +44,19 @@ def showe():
 while True:
     x1 = input('Type PLAY to Start!\n').upper()
     if x1 == "PLAY":
+        print()
+        time.sleep(1)
         while True: ##### CHOOSE YOUR CHARACTER #####
             x2 = input('Would you like to play a BOY or a GIRL\n').upper()
 
-            if x2 == 'BOY':    
+            if x2 == 'BOY':
+                print()
+                time.sleep(1)    
                 x2 = type_text("Great! His name is Marcello! He's a handsome fellow\n")
                 break
             elif x2 =='GIRL':
+                print()
+                time.sleep(1)
                 x2 = type_text("YAY her name it Preethi :D, she's awesome\n")
                 break
             else:
@@ -66,9 +72,13 @@ while True:
             print()
 
             if power == 'WEREWOLF':
+                print()
+                time.sleep(1)
                 power = type_text("Such an advantageous choice! You've possesed speed running abilities >>>>")
                 break
             elif power =='VAMPIRE': 
+                print()
+                time.sleep(1)
                 power = type_text("So Spooky, you think you're dracula or something?? JK you dont have to consume anything except for blood now!")
                 break
             else:
@@ -83,6 +93,7 @@ while True:
             
             if quest == "THROW": #beginning of throw option
                 print()
+                time.sleep(1)
                 type_text("The dry paper catches instantly, curling and blackening as the words dissolve into smoke")
                 type_text("The bushes rustle around you as if something unseen was watching. . .")
                 type_text("You snuggle in your sleeping bag brushing it off however sleeping uneasily")
@@ -102,6 +113,7 @@ while True:
                     quest1 = input("Which do you choose? The CLEAR path or DARK one?\n").upper()
                     if quest1 == "CLEAR": #choosing clear or dark
                          print()
+                         time.sleep(1)
                          type_text("After a few steps about to head onto what you think is the right path, the map flips out of your hands aggressively towards"
                              " the dark pathway")
                          print()
@@ -120,6 +132,8 @@ while True:
                          break
  
                     elif quest1 == "DARK": 
+                         print()
+                         time.sleep(1)
                          type_text('It doesnt look very welcoming, but it may be worth a shot')
                          type_text("The map glows as if it approves of your decision.")
                          type_text("Treading into the dark broody forest we go. . .")
@@ -131,6 +145,8 @@ while True:
                 break
 
             elif quest == "READ":
+                 print()
+                 time.sleep(1)
                  type_text("You unfold the dry paper as it appears to be an apology letter from Mom") 
                  print()
                  type_text("Dear Child,")
