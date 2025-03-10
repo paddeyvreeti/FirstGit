@@ -1,15 +1,18 @@
 // First C++ code!
 #include <iostream>
+#include <string>
 
 using namespace std;
 
 int main() {
-    int flavor; 
+    string flavor; 
 
     cout << "Enter your favorite ice cream flavor: "; 
-    cin >> flavor; 
+    getline(cin, flavor); 
     cout << "Your favorite flavor is " << flavor << endl; 
 
     return 0;
 
 }
+
+
